@@ -1,0 +1,253 @@
+/*estilo css*/
+
+html {
+    height: 100vh;
+    /*overflow-x: hidden;*/
+}
+
+body {
+    
+    font-family: "Sansita","Times New Roman",Arial,Verdana,sans-serif;
+    background-image: url('../img/bg_360.jpg');
+    /*height: 100%;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ section {
+        padding-top: 50px;
+    }
+
+.brand {
+    display: none;
+}
+
+.navbar-header{
+    background-color: yellow;
+}
+
+.imgmobile {
+    width: 172px;
+    height: 50px;
+    }
+
+.page-header{
+    border-bottom: 1px solid #808080;
+    margin-top: 0px;
+    padding-top: 0px;
+    }
+
+.nav {
+    display: table; 
+    float: left;
+    margin: 0 auto;
+    /*table-layout: fixed; */
+    font-family: "Sansita","Times New Roman",Arial,Verdana,sans-serif; 
+    font-size: 18px;
+}
+
+.box {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.align {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linha {
+        padding: 20px;
+    }
+    
+    .pijamas_item p,h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+.menu {
+        position: -webkit-sticky;    
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+
+.menu-fixo {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        transition: all .5s;
+    }
+
+.dropdown-menu  {
+    font-size: 18px;
+}
+
+.icone {
+    margin-bottom: 10px;
+}
+
+.pijamas_item {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    }
+
+footer {
+    padding: 0px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    text-align: inherit;    
+    }
+    
+
+@media screen and (min-width:768px) { 
+
+    body {
+    font-family: "Sansita","Times New Roman",Arial,Verdana,sans-serif;
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    
+    section {
+        padding-top: 60px;
+    }
+    
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 10px 0 10px;
+        text-align: center;
+        background-color: yellow; 
+    }
+    
+    .menu {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+    
+    .page-header{
+        border-bottom: 1px solid #808080;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    
+    .navbar-header {
+        display: none;
+    }
+    
+    nav{
+        box-shadow: 5px 5px 5px black;
+        border-radius: 0px;
+    }
+        
+    .nav {
+        float: inherit;
+    }
+    
+    .navbar {
+        margin-top: 0px;
+        /*border-radius: 0px;*/
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    li {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .box {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        padding: 15px 15px;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+        box-shadow: 5px 5px 5px black;
+        border-radius: 3px;
+    }
+    
+    .container{
+        width: 90%;
+    }
+    
+    .img-full {
+        min-width: 100%;
+    }
+    
+    .pijamas_item {
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+    
+    .pijamas_item p,h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .menu-fixo {
+        position: fixed;
+        width: 88%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        transition: all .5s;
+    }
+    
+    
+    .contato textarea {
+    height: 170px;
+}
+
+    .contato .aviso {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contato .tel {
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 50px;
+    }
+
+    footer {
+        padding: 0px;
+        padding-bottom: 0px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .linha {
+        padding: 20px;
+    }
+
+    .send {
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .somos {
+        text-align: center;
+    }
+    
+    
+}
