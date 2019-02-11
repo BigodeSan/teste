@@ -6,7 +6,7 @@ $(document).ready(function() {
     if (!cep) {
         return
     }
-    var url = 'http://viacep.com.br/ws/' + cep + '/json'; 
+    var url = 'https://viacep.com.br/ws/' + cep + '/json'; 
 
     $.getJSON(url, function(data) {
             if ("error" in data) {
