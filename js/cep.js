@@ -1,5 +1,5 @@
 (function() {
-    $('input [name="cep"]').blur(function(e) {
+    $('input[name="cep"]').blur(function(e) {
 
     var cep = $('input[name="cep"]').val  || ''
 
@@ -13,10 +13,10 @@ $.getJSON(url, function(data) {
             return
         } 
         
-        $('input [name="rua"]').val(data.logradouro)
-        $('input [name="bairro"]').val(data.bairro)
-        $('input [name="cidade"]').val(data.localidade)
-        $('input [name="uf"]').val(data.uf)
+        $('input[name="rua"]').val(data.logradouro)
+        $('input[name="bairro"]').val(data.bairro)
+        $('input[name="cidade"]').val(data.localidade)
+        $('input[name="uf"]').val(data.uf)
 
         })
 
