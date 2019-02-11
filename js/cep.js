@@ -1,12 +1,12 @@
 $(document).ready(function() {
     $('input[name="cep"]').blur(function(e) {
 
-    var cep = $('input[name="cep"]').val()  || ''
+    var cep = $('input[name="cep"]').val()  || '';
 
     if (!cep) {
         return
     }
-    var url = 'http://viacep.com.br/ws/' + cep + '/json' 
+    var url = 'http://viacep.com.br/ws/' + cep + '/json'; 
 
     $.getJSON(url, function(data) {
             if ("error" in data) {
