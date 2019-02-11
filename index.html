@@ -84,9 +84,35 @@
     </form>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    (function() {
+    $('input[name="cep"]').blur(function(e) {
+
+    var cep = $('input[name="cep"]').val()  || ''
+
+    if (!cep) {
+        return
+    }
+    var url = 'http://viacep.com.br/ws/' + cep + '/json' 
+
+    $.getJSON(url, function(data) {
+            if ("error" in data) {
+                return
+            } 
+            
+            $('input[name="rua"]').val(data.logradouro)
+            $('input[name="bairro"]').val(data.bairro)
+            $('input[name="cidade"]').val(data.localidade)
+            $('input[name="uf"]').val(data.uf)
+
+            })
+
+        })
+}) 
+    </script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/cep.js"></script>
+    <!-- <script src="js/cep.js"></script> -->
   </body>
 </html>
