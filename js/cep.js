@@ -58,7 +58,7 @@ $(document).ready(function() {
                 $("#ibge").val("...");
 
                 //Consulta o webservice viacep.com.br/
-                $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+                $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/", function(dados) {
 
                     if (!("erro" in dados)) {
                         //Atualiza os campos com os valores da consulta.
