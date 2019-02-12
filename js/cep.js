@@ -4,14 +4,14 @@
     var cep = $('input[name="cep"]').val()  || '';
 
     if (!cep) {
-        return
+        //return
+        alert("cep não encontrado!")
     }
     var url = "https://viacep.com.br/ws/" + cep + "/json"; 
 
     $.getJSON(url, function(data) {
             if ("error" in data) {
-                //return
-                alert("Cep não encontrado!")
+                return
             } 
             
             $('input[name="rua"]').val(data.logradouro);
