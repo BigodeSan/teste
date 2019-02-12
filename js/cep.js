@@ -10,7 +10,8 @@
 
     $.getJSON(url, function(data) {
             if ("error" in data) {
-                return
+                //return
+                alert("Cep não encontrado!")
             } 
             
             $('input[name="rua"]').val(data.logradouro);
