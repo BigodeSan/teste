@@ -4,8 +4,8 @@
     var cep = $('input[name="cep"]').val()  || '';
 
     if (!cep) {
-        //return
-        alert("CEP não encontrado!")
+        alert("CEP não encontrado!");
+        return
     }
     var url = "https://viacep.com.br/ws/" + cep + "/json"; 
 
