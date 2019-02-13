@@ -1,7 +1,7 @@
  $(document).ready(function() {
     $('input[name="cep"]').blur(function(e) {
 
-    var cep = $('input[name="cep"]').val()  || '';
+    var cep = $('input[name="cep"]').val().replace(/\D/g  || '');
 
     if (!cep) {
         //return
