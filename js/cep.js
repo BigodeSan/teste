@@ -5,7 +5,7 @@
 
     if (!cep) {
         //return
-        alert("cep não encontrado!")
+        alert("CEP não encontrado!")
     }
     var url = "https://viacep.com.br/ws/" + cep + "/json"; 
 
